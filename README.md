@@ -149,3 +149,16 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Contour based segmentation gave better results than region growing segmentation.
 - **Part 2**
   - ORB feature detection worked better for matching overlapping regions. 
+
+## Alternative approaches
+- **Part 1**
+    - **Hough Circle Transform:**
+      - The Hough Circle Transform was tested to directly detect circular shapes.
+      - It performed well for coins with clear circular edges but failed when coins were touching or partially obscured.
+- **Part 2**
+    - **Feature Matching with FLANN:**
+      - The FLANN-based matcher (Fast Library for Approximate Nearest Neighbors) was tested for keypoint matching.
+      - While it worked well, ORB with Brute Force Matching (BFMatcher) gave more consistent results.
+    - **Direct Blending of Images Without Homography:**
+      - A simple pixel-based blending approach was tested, where images were overlapped and averaged.
+      - This method failed when images had perspective differences, making homography transformation necessary for proper alignment.
