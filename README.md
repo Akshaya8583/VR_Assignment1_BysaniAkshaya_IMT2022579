@@ -6,17 +6,19 @@
   ```
 ## How to run the code 
 - The assignment is done in google colab.
-- The code for part 1 is in the file VR_a1_q1.ipynb of the folder "part1".
-- The images required are present in the same folder.
-- Ensure you are in the same directory before running the code.
-- For each cell do "Shift + Enter" to run the code present in that cell.
-- The output images for part 1 is placed in the "output" folder in "part1" folder.
-- The code for part 2 is in the file VR_a1_q1.ipynb of the folder "part2".
-- The images required are present in the same folder.
-- Ensure you are in the same directory before running the code.
-- For each cell do "Shift + Enter" to run the code present in that cell.
-- if the images need to be changed, put the required input images into the respective folder and change the paths of the images in the code.
-- The output image for part 2 is placed in the "output" folder in "part2" folder.
+- **Part 1**
+  - The code for part 1 is in the file VR_a1_q1.ipynb of the folder "part1".
+  - The images required are present in the same folder.
+  - Ensure you are in the same directory before running the code.
+  - For each cell do "Shift + Enter" to run the code present in that cell.
+  - The output images for part 1 is placed in the "output" folder in "part1" folder.
+- **Part 2**
+  - The code for part 2 is in the file VR_a1_q1.ipynb of the folder "part2".
+  - The images required are present in the same folder.
+  - Ensure you are in the same directory before running the code.
+  - For each cell do "Shift + Enter" to run the code present in that cell.
+  - if the images need to be changed, put the required input images into the respective folder and change the paths of the images in the code.
+  - The output image for part 2 is placed in the "output" folder in "part2" folder.
 
 ## Part 1 : Use computer vision techniques to Detect, segment, and count coins from an image containing scattered Indian coins.
 
@@ -132,4 +134,9 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Displays the final stitched panorama.
   <img src="part2/output/finalPanorama.png" width="80%" />
 
-
+## Observations
+- **Part 1**
+  - Otsu's thresholding and Morphological closing helped in removing noise and better detection of contours.
+  - Contour based segmentation gave better results than region growing segmentation.
+- **Part 2**
+  - ORB feature detection worked better for matching overlapping regions. 
