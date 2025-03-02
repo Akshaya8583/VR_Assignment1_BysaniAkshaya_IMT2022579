@@ -109,4 +109,4 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Extracts keypoints and descriptors.
   - Iterates through image pairs, matching features and warping images.
   - Displays the final stitched panorama.
-  - ![image](https://github.com/user-attachments/assets/b520fb01-f590-4673-99c2-f747ba20caa2)
+  <img src="part2/output/finalPanorama.png" width="7%" />
