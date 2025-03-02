@@ -78,7 +78,7 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
 
 ### a. Extract Key Points
 
--The function ```extract_keypoints_and_descriptors(images)``` processes the input images using ORB to detect keypoints and compute descriptors
+- The function ```extract_keypoints_and_descriptors(images)``` processes the input images using ORB to detect keypoints and compute descriptors
   - Converts each image to grayscale.
   - Extracts keypoints and descriptors using ORB.
   - Displays the keypoints on the original images for visualization.
