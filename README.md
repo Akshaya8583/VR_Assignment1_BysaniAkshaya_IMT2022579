@@ -120,9 +120,12 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Selects the top 50 best matches based on distance.
   - Displays the matched features between image pairs.
   - Feature matches between images 1 and 2.
-  - ![image](https://github.com/user-attachments/assets/9665e77d-e738-4bd8-bf9b-3fe114e94fc0)
+    
+   ![image](https://github.com/user-attachments/assets/9665e77d-e738-4bd8-bf9b-3fe114e94fc0)
+
   - Feature matches between images 2 and 3.
-  - ![image](https://github.com/user-attachments/assets/370f0829-2532-4754-8fe0-dc20700f99ae)
+
+   ![image](https://github.com/user-attachments/assets/370f0829-2532-4754-8fe0-dc20700f99ae)
 
 
 ### b. Image Stitching
