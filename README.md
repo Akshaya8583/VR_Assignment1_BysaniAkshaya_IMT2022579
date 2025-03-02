@@ -71,7 +71,40 @@ Here segmentation has been performed using two methods:
 Each contour identify belongs to a different coin. Therefore, number of coins will be equal to the number of contours ientified.
 
 ## Part 2 : Create a stitched panorama from multiple overlapping images.
+### Input images
+  - ![pimg31](https://github.com/user-attachments/assets/3734d41a-dee2-46d7-a329-11e3d2fc92ac)
+  - ![pimg32](https://github.com/user-attachments/assets/707488e8-a920-431d-a4c8-4bb38a0e1ac0)
+  - ![pimg33](https://github.com/user-attachments/assets/bbe7494e-337e-456f-9d28-ab483e3c3bd3)
 
 ### a. Extract Key Points
 
-The function ```extract_keypoints_and_descriptors(images)``` processes the input images using ORB to detect keypoints and compute descriptors
+-The function ```extract_keypoints_and_descriptors(images)``` processes the input images using ORB to detect keypoints and compute descriptors
+  - Converts each image to grayscale.
+  - Extracts keypoints and descriptors using ORB.
+  - Displays the keypoints on the original images for visualization.
+  - ![image](https://github.com/user-attachments/assets/6eafcbe1-05a2-4435-98f3-795da7547a4f)
+  - ![image](https://github.com/user-attachments/assets/2d3e49ab-dba9-434c-859e-c15e69f54533)
+  - ![image](https://github.com/user-attachments/assets/7f2c4b9f-ecef-40c7-8326-035bdc070dff)
+
+- The function ```match_keypoints(des1, des2, img1, img2, kp1, kp2)``` performs feature matching:
+  - Uses the Brute Force Matcher (BFMatcher) with Hamming distance.
+  - Matches descriptors between consecutive images.
+  - Selects the top 50 best matches based on distance.
+  - Displays the matched features between image pairs.
+  - ![image](https://github.com/user-attachments/assets/9665e77d-e738-4bd8-bf9b-3fe114e94fc0)
+  - ![image](https://github.com/user-attachments/assets/370f0829-2532-4754-8fe0-dc20700f99ae)
+
+
+### b. Image Stitching
+- The function ```warp_and_stitch(base_img, new_img, kp1, kp2, matches```) aligns images:
+  - Extracts matching keypoint coordinates.
+  - Computes a homography matrix using RANSAC.
+  - Warps the new image to align with the base image.
+  - Computes the bounding box and adjusts the transformation matrix to accommodate all images.
+  - Combines the images into a single panorama.
+- The function ```stitch_images(image_paths)``` manages the full stitching process:
+  - Reads images from the given file paths.
+  - Extracts keypoints and descriptors.
+  - Iterates through image pairs, matching features and warping images.
+  - Displays the final stitched panorama.
+  - ![image](https://github.com/user-attachments/assets/b520fb01-f590-4673-99c2-f747ba20caa2)
