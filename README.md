@@ -40,15 +40,15 @@
 - **Otsu's thresholding** is used to binarize the image, converting it into a black-and-white format for easier segmentation.
 - **Morphological closing** is applied to remove small holes and improve segmentation quality.
 
-- ![image](https://github.com/user-attachments/assets/e60d3ce9-d16d-4072-a88d-325bf57b1115).
+ ![image](https://github.com/user-attachments/assets/e60d3ce9-d16d-4072-a88d-325bf57b1115).
  
 - **Canny edge detection** is used to find the edges of coins in the image.
 
-- ![image](https://github.com/user-attachments/assets/f82c6c58-10ed-4003-aee5-d0cb19a08cfc)
+ ![image](https://github.com/user-attachments/assets/f82c6c58-10ed-4003-aee5-d0cb19a08cfc)
 
 - Contours are detected from the thresholded image to locate the coins using the inbuilt cv2 functions **findContours** and **drawContours**.
 
-- ![image](https://github.com/user-attachments/assets/9415566e-b8fd-403b-b214-878fa6b54bf4)
+ ![image](https://github.com/user-attachments/assets/9415566e-b8fd-403b-b214-878fa6b54bf4)
 
 ### b. Segmentation of each coin.
 
@@ -102,12 +102,17 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Converts each image to grayscale.
   - Extracts keypoints and descriptors using ORB.
   - Displays the keypoints on the original images for visualization.
-  - Keypoints of image 1. 
-  - ![image](https://github.com/user-attachments/assets/6eafcbe1-05a2-4435-98f3-795da7547a4f)
+  - Keypoints of image 1.
+     
+   ![image](https://github.com/user-attachments/assets/6eafcbe1-05a2-4435-98f3-795da7547a4f)
+
   - Keypoints of image 2.
-  - ![image](https://github.com/user-attachments/assets/2d3e49ab-dba9-434c-859e-c15e69f54533)
+  
+   ![image](https://github.com/user-attachments/assets/2d3e49ab-dba9-434c-859e-c15e69f54533)
+
   - Key points of image 3.
-  - ![image](https://github.com/user-attachments/assets/7f2c4b9f-ecef-40c7-8326-035bdc070dff)
+
+   ![image](https://github.com/user-attachments/assets/7f2c4b9f-ecef-40c7-8326-035bdc070dff)
 
 - The function ```match_keypoints(des1, des2, img1, img2, kp1, kp2)``` performs feature matching:
   - Uses the Brute Force Matcher (BFMatcher) with Hamming distance.
@@ -132,6 +137,7 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Extracts keypoints and descriptors.
   - Iterates through image pairs, matching features and warping images.
   - Displays the final stitched panorama.
+  
   <img src="part2/output/finalPanorama.png" width="80%" />
 
 ## Observations
