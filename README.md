@@ -52,18 +52,18 @@ Here segmentation has been performed using two methods:
 - **Output: Segmenting each coin**
 
 <p align="center">
-  <img src="output/coin1.png" width="7%" />
-  <img src="output/coin2.png" width="7%" />
-  <img src="output/coin3.png" width="7%" />
-  <img src="output/coin4.png" width="7%" />
-  <img src="output/coin5.png" width="7%" />
-  <img src="output/coin6.png" width="7%" />
-  <img src="output/coin7.png" width="7%" />
-  <img src="output/coin8.png" width="7%" />
-  <img src="output/coin9.png" width="7%" />
-  <img src="output/coin10.png" width="7%" />
-  <img src="output/coin11.png" width="7%" />
-  <img src="output/coin12.png" width="7%" />
+  <img src="part1/output/coin1.png" width="7%" />
+  <img src="part1/output/coin2.png" width="7%" />
+  <img src="part1/output/coin3.png" width="7%" />
+  <img src="part1/output/coin4.png" width="7%" />
+  <img src="part1/output/coin5.png" width="7%" />
+  <img src="part1/output/coin6.png" width="7%" />
+  <img src="part1/output/coin7.png" width="7%" />
+  <img src="part1/output/coin8.png" width="7%" />
+  <img src="part1/output/coin9.png" width="7%" />
+  <img src="part1/output/coin10.png" width="7%" />
+  <img src="part1/output/coin11.png" width="7%" />
+  <img src="part1/output/coin12.png" width="7%" />
 </p>
 
 ### c. Counting number of coins in the image
