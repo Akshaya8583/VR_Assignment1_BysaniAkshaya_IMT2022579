@@ -1,7 +1,7 @@
 # VR_Assignment1_BysaniAkshaya_IMT2022579
 ## Dependencies
 - Ensure you installed required dependencies.
-  ```pip install opencv-python numpy matplotlib```
+  ```pip install opencv-python numpy matplotlib
 ## How to run the code 
 - The assignment is done in google colab.
 - The code for part 1 is in the file VR_a1_q1.ipynb of the folder "part1".
