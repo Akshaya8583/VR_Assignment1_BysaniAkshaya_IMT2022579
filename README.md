@@ -27,15 +27,15 @@
 #### Preprocessing 
 - Loading the input image
   
-- ![image](https://github.com/user-attachments/assets/a363d1c0-62b5-40c0-b382-9b786c4177e9)
+ ![image](https://github.com/user-attachments/assets/a363d1c0-62b5-40c0-b382-9b786c4177e9)
   
 - Converting the image into **grayscale**.
   
-- ![image](https://github.com/user-attachments/assets/f17d5af6-6618-496a-a6f6-9455e39076f0)
+ ![image](https://github.com/user-attachments/assets/f17d5af6-6618-496a-a6f6-9455e39076f0)
   
 - Applying **gaussian blur** with parameters grayscaled image, kernel size (5, 5), standard deviation 0 to smooth the image.
   
-- ![image](https://github.com/user-attachments/assets/d20cd52d-7247-4c80-a383-82ea58d37b5a)
+ ![image](https://github.com/user-attachments/assets/d20cd52d-7247-4c80-a383-82ea58d37b5a)
 
 - **Otsu's thresholding** is used to binarize the image, converting it into a black-and-white format for easier segmentation.
 - **Morphological closing** is applied to remove small holes and improve segmentation quality.
