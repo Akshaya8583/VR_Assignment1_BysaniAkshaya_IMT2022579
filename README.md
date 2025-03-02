@@ -1,6 +1,20 @@
 # VR_Assignment1_BysaniAkshaya_IMT2022579
-
-Assignment is done in google colab.
+## Dependencies
+- Ensure you installed required dependencies.
+  ```pip install opencv-python numpy matplotlib```
+## How to run the code 
+- The assignment is done in google colab.
+- The code for part 1 is in the file VR_a1_q1.ipynb of the folder "part1".
+- The images required are present in the same folder.
+- Ensure you are in the same directory before running the code.
+- For each cell do "Shift + Enter" to run the code present in that cell.
+- The output images for part 1 is placed in the "output" folder in "part1" folder.
+- The code for part 2 is in the file VR_a1_q1.ipynb of the folder "part2".
+- The images required are present in the same folder.
+- Ensure you are in the same directory before running the code.
+- For each cell do "Shift + Enter" to run the code present in that cell.
+- if the images need to be changed, put the required input images into the respective folder and change the paths of the images in the code.
+- The output image for part 2 is placed in the "output" folder in "part2" folder.
 
 ## Part 1 : Use computer vision techniques to Detect, segment, and count coins from an image containing scattered Indian coins.
 
@@ -84,8 +98,11 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Converts each image to grayscale.
   - Extracts keypoints and descriptors using ORB.
   - Displays the keypoints on the original images for visualization.
+  - Keypoints of image 1. 
   - ![image](https://github.com/user-attachments/assets/6eafcbe1-05a2-4435-98f3-795da7547a4f)
+  - Keypoints of image 2.
   - ![image](https://github.com/user-attachments/assets/2d3e49ab-dba9-434c-859e-c15e69f54533)
+  - Key points of image 3.
   - ![image](https://github.com/user-attachments/assets/7f2c4b9f-ecef-40c7-8326-035bdc070dff)
 
 - The function ```match_keypoints(des1, des2, img1, img2, kp1, kp2)``` performs feature matching:
@@ -93,7 +110,9 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Matches descriptors between consecutive images.
   - Selects the top 50 best matches based on distance.
   - Displays the matched features between image pairs.
+  - Feature matches between images 1 and 2.
   - ![image](https://github.com/user-attachments/assets/9665e77d-e738-4bd8-bf9b-3fe114e94fc0)
+  - Feature matches between images 2 and 3.
   - ![image](https://github.com/user-attachments/assets/370f0829-2532-4754-8fe0-dc20700f99ae)
 
 
@@ -110,3 +129,5 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
   - Iterates through image pairs, matching features and warping images.
   - Displays the final stitched panorama.
   <img src="part2/output/finalPanorama.png" width="80%" />
+
+
