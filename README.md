@@ -72,9 +72,11 @@ Each contour identify belongs to a different coin. Therefore, number of coins wi
 
 ## Part 2 : Create a stitched panorama from multiple overlapping images.
 ### Input images
-  - ![pimg31](https://github.com/user-attachments/assets/3734d41a-dee2-46d7-a329-11e3d2fc92ac)
-  - ![pimg32](https://github.com/user-attachments/assets/707488e8-a920-431d-a4c8-4bb38a0e1ac0)
-  - ![pimg33](https://github.com/user-attachments/assets/bbe7494e-337e-456f-9d28-ab483e3c3bd3)
+  <p align="center">
+  <img src="part2/pimg31.png" width="20%" />
+  <img src="part2/pimg32.png" width="20%" />
+  <img src="part2/pimg33.png" width="20%" />
+</p>
 
 ### a. Extract Key Points
 
