@@ -53,6 +53,20 @@ Here segmentation has been performed using two methods:
   
 - ![image](https://github.com/user-attachments/assets/858c78d4-0415-4529-a44f-81ee85f5346f)
 
+<p align="center">
+  <img src="output/coin1.png" width="8%" />
+<!--   <img src="image2.png" width="8%" />
+  <img src="image3.png" width="8%" />
+  <img src="image4.png" width="8%" />
+  <img src="image5.png" width="8%" />
+  <img src="image6.png" width="8%" />
+  <img src="image7.png" width="8%" />
+  <img src="image8.png" width="8%" />
+  <img src="image9.png" width="8%" />
+  <img src="image10.png" width="8%" />
+  <img src="image11.png" width="8%" />
+  <img src="image12.png" width="8%" /> -->
+</p>
 
 ### c. Counting number of coins in the image
 
