@@ -69,3 +69,9 @@ Here segmentation has been performed using two methods:
 ### c. Counting number of coins in the image
 
 Each contour identify belongs to a different coin. Therefore, number of coins will be equal to the number of contours ientified.
+
+## Part 2 : Create a stitched panorama from multiple overlapping images.
+
+### a. Extract Key Points
+
+The function ```extract_keypoints_and_descriptors(images)``` processes the input images using ORB to detect keypoints and compute descriptors
